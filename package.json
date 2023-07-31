@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/static": "^6.10.2",
+    "@fastify/view": "^8.0.0",
+    "better-sqlite3": "^8.5.0",
+    "ejs": "^3.1.9",
     "fastify": "^4.21.0"
   }
 }

@@ -1,0 +1,21 @@
+<%- include('./shared/header.ejs', {title:'Bienvenu sur mon bloc'} ) %>
+
+
+<div class="container">
+    <h1>Bienvenue sur mon bloc</h1>
+    <div class="row row-cols-2">
+        <% for (const post of posts) { %>
+            <div class="col">
+                <%- include('./shared/post.ejs', {post} )  %>
+            </div>
+            <% } %>
+    </div>
+    
+        <!-- <% // if (locals.title) { %>
+        <h1><%-//title %></h1> 
+        <% //} %> -->
+
+</div>
+
+
+<%- include('./shared/footer.ejs') %>
