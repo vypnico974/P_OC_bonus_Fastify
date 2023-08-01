@@ -2,10 +2,23 @@
 
 
 <div class="container">
-    <h1>Bienvenue sur mon bloc</h1>
+
+    <form method="post" action="">
+        <div class="mb-2">
+            <label for="title">Titre</label>
+            <input type="text" class="form-control" id="title" name="title">
+        </div >
+        <div class="mb-2">
+            <label for="content">contenu</label>
+            <textarea id="content" class="form-control" name="content"></textarea>
+        </div>
+           <button class="btn btn-primary">Ajouter l'article</button>
+    </form>
+
+    <h1 class="my-5">Bienvenue sur mon bloc</h1>
     <div class="row row-cols-2">
         <% for (const post of posts) { %>
-            <div class="col">
+            <div class="col mb-2">
                 <%- include('./shared/post.ejs', {post} )  %>
             </div>
             <% } %>
